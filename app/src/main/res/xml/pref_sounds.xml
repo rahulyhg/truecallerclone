@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+            when checked/unchecked. -->
+    <PreferenceCategory
+        android:title="RINGTONE">
+        <RingtonePreference
+            android:defaultValue="content://settings/system/ringtone"
+            android:key="calls_ringtone"
+            android:ringtoneType="ringtone"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="MESSAGE SOUND">
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="notifications_new_message_ringtone"
+            android:ringtoneType="notification"/>
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notifications_new_message_vibrate"
+            android:title="@string/pref_title_vibrate" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

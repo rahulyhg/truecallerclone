@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sms_list_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:textAutoLink="all"
+        android:layout_above="@+id/images" />
+
+    <ProgressBar
+        android:id="@+id/progress_sms_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/images"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/greyLight"/>
+
+    <RelativeLayout
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@+id/input_message">
+        <ImageView
+            android:id="@+id/selected_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp" />
+
+        <ImageButton
+            android:id="@+id/button_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/selected_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_close_image"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </RelativeLayout>
+
+   <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/input_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:inputHint="Enter a message"
+        app:showAttachmentButton="true">
+       <ImageButton
+           android:id="@+id/emoji_button"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_marginEnd="5dp"
+           android:scaleType="centerCrop"
+           android:foregroundGravity="center"
+           android:background="@color/white"
+           android:layout_marginTop="5dp"
+           android:src="@drawable/ic_action_emoji"
+           android:layout_toStartOf="@+id/messageSendButton" />
+   </com.stfalcon.chatkit.messages.MessageInput>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "669388799120",
+    "firebase_url": "https://stopspamcallmanagerapp.firebaseio.com",
+    "project_id": "stopspamcallmanagerapp",
+    "storage_bucket": "stopspamcallmanagerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669388799120:android:c5662da815196179",
+        "android_client_info": {
+          "package_name": "com.example.artur.stopspamcallmanagerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669388799120-u6qd63c16pe6t8flnib0gc0tdnvmcvp4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.artur.stopspamcallmanagerapp",
+            "certificate_hash": "61881a7f2b16d850bae074eb64cc1237ff30429b"
+          }
+        },
+        {
+          "client_id": "669388799120-a89fjkdil3gevumm1j9bj8fmojbotntd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.artur.stopspamcallmanagerapp",
+            "certificate_hash": "90de420a4d3486e87184714a607ea2170e5a0382"
+          }
+        },
+        {
+          "client_id": "669388799120-hstarktfqlpvmbthfpc0qacn1hfka1no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALXs0fDWFq2Xe6F0vdFQcv3osGK2a5nUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669388799120-hstarktfqlpvmbthfpc0qacn1hfka1no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669388799120:android:e6a22ee0b1192079",
+        "android_client_info": {
+          "package_name": "com.innovations.djnig.truecallerclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669388799120-2116qakr4krhuc8b85v2i8gaovo3i6iq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innovations.djnig.truecallerclone",
+            "certificate_hash": "90de420a4d3486e87184714a607ea2170e5a0382"
+          }
+        },
+        {
+          "client_id": "669388799120-hstarktfqlpvmbthfpc0qacn1hfka1no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALXs0fDWFq2Xe6F0vdFQcv3osGK2a5nUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669388799120-hstarktfqlpvmbthfpc0qacn1hfka1no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

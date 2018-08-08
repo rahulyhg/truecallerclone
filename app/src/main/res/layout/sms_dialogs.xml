@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stfalcon.chatkit.dialogs.DialogsList
+        android:id="@+id/dialogsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_navigation_height"/>
+
+    <RelativeLayout
+        android:id="@+id/no_sms"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/blocked_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ic_sms_empty"
+            />
+        <TextView
+            android:id="@+id/big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="No conversations here"
+            android:textColor="@color/black"
+            android:textSize="9pt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/blocked_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="All conversations will show up here.\nYou can create new conversation by clicking on button."
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/big_text"/>
+    </RelativeLayout>
+
+    <com.innovations.djnig.truecallerclone.customView.Fab
+        android:id="@+id/new_message"
+        style="@style/Widget.MaterialSheetFab.Fab"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+   <!-- <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"/>-->
+
+    <!-- Circular reveal container for the sheet -->
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+       <!-- <android.support.v7.widget.CardView
+            android:id="@+id/fab_sheet"
+            style="@style/Widget.MaterialSheetFab.Sheet">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fab_sheet_new_number"
+                android:drawableStart="@drawable/ic_dialpad_dark"
+                android:text="@string/enter_number"
+                style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"/>
+
+            <TextView
+                android:id="@+id/fab_sheet_from_contacts"
+                android:drawableStart="@drawable/ic_person"
+                android:text="@string/find_contact"
+                style="@style/TextAppearance.MaterialSheetFab.Sheet.Item" />
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>-->
+    </io.codetail.widget.RevealLinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

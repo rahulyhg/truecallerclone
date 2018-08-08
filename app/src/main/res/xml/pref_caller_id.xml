@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="show_unknown_callers"
+        android:title="Show unknown callers" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="show_phonebook_contacts"
+        android:title="Show phonebook contacts" />
+    <PreferenceCategory >
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="show_after_call_details"
+            android:title="Show after call details" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

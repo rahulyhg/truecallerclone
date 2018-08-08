@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_conversation_call"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_sms_make_call"
+        android:title="@string/call"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_more"
+        android:title="@string/action_more"
+        app:showAsAction="ifRoom"
+       />
+</menu>

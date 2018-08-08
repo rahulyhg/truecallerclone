@@ -1,0 +1,40 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.innovations.djnig.truecallerclone.settings.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_general_settings"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="com.innovations.djnig.truecallerclone.settings.SettingsActivity$SoundsPreferenceFragment"
+        android:icon="@drawable/ic_sound"
+        android:title="@string/sounds" />
+
+    <header
+        android:fragment="com.innovations.djnig.truecallerclone.settings.SettingsActivity$AppLanguagePreferenceFragment"
+        android:icon="@drawable/ic_language"
+        android:title="@string/app_language" />
+
+    <header
+        android:fragment="com.innovations.djnig.truecallerclone.settings.SettingsActivity$CallerIdPreferenceFragment"
+        android:icon="@drawable/ic_caller_id"
+        android:title="@string/caller_id" />
+
+    <header
+        android:fragment="com.innovations.djnig.truecallerclone.settings.SettingsActivity$MessagingPreferenceFragment"
+        android:icon="@drawable/ic_message"
+        android:title="@string/messaging" />
+
+    <header
+        android:fragment="com.innovations.djnig.truecallerclone.settings.SettingsActivity$BlockPreferenceFragment"
+        android:icon="@drawable/ic_block"
+        android:title="@string/block" />
+
+    <header
+        android:fragment="com.innovations.djnig.truecallerclone.settings.SettingsActivity$AppearencePreferenceFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/appearance" />
+
+</preference-headers>

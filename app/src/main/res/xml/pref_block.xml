@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="is_block_hidden_numbers"
+        android:summary="Any caller that shows their numbers as unknown"
+        android:title="@string/block_hidden" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="is_block_top_spammers"
+        android:summary="@string/protect_yourself"
+        android:title="@string/block_spammers" />
+
+    <ListPreference
+        android:entries="@array/pref_how_to_block_calls"
+        android:entryValues="@array/pref_how_to_block_calls_values"
+        android:defaultValue="1"
+        android:key="how_block_calls"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/how_block"
+        android:dialogTitle="@string/how_block"
+        android:summary="%s"/>
+    <PreferenceCategory android:title="Notifications">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="is_notif_for_blocked_calls"
+            android:summary="@string/notif_block_calls"
+            android:title="@string/notif_calls_tittle" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="is_notif_for_blocked_sms"
+            android:summary="@string/notif_block_sms"
+            android:title="@string/notif_sms_tittle" />
+    </PreferenceCategory>
+</PreferenceScreen>
